@@ -1,0 +1,130 @@
+
+/*Estilos del toolbar*/
+/*Estilo de los botones del toolbar*/
+.btn_toolbar{
+	font-size: 45px !important;
+	color: #FFF;
+}
+
+/*Estilo del div toolbar*/
+.toolbar{
+	background-color: #FFA860;
+	padding: 20px;
+}
+
+/*Listado de usuarios*/
+.btn_edit{
+	color: #E89410;
+	font-size: 20px !important;
+}
+
+.btn_delete{
+	color: #FD4F3D;
+	font-size: 20px !important;
+}
+
+.btn_generate{
+	color: #5a23f1;
+	font-size: 20px !important;
+}
+
+/*Estilos nav-bar*/
+.nav-bar{
+	background-color: #32383e !important;
+}
+
+.list-items{
+	color: #c8c8c8 !important;
+}
+
+/* Thumbnail profile pic*/
+
+.cont_pic, .profile_pict{
+	width: 130px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	padding:0!important;
+}
+.cont_pic{
+	height: 130px;
+}
+.profile_pict{
+	border-radius: 50%;
+	border: 3px solid #fff;
+    line-height: 80px;
+    background: #fff;
+	box-shadow: 0 0 0 3px #E89410; 
+	padding:0!important;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.hoverimg{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 60%;
+	padding-left:25px;
+	transform: translate (-50%, -50%);
+	-ms-transform: translate (-50%, -50%);
+	text-align: center;
+}
+
+.cont_pic:hover .profile_pict{
+	opacity: 0.3;
+}
+
+.cont_pic:hover .hoverimg{
+	opacity: 1;
+}
+
+.hovertext{
+	background-color: rgba(53, 53, 53, 0.637);
+	color: white;
+	font-size: 14px;
+	padding: 4px 12px;
+}
+
+.add-on{
+	margin-left: 0px!important;
+    margin-right: 0px!important;
+    display: initial!important;
+    vertical-align: baseline!important;
+}
+
+
+#barcodevideo, #barcodecanvas, #barcodecanvasg {
+	height: 400px;
+}	
+
+#barcodecanvasg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#result {
+position: absolute;
+    font-family: verdana;
+    font-size: 1.8em;
+    top: 68px;
+    left: 354px;	
+    color: red;
+
+}
+
+#barcode {
+	position: relative;
+	width: 75vh;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}	
+
+#barcodecanvas {
+	display: none;
+}
